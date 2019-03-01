@@ -15,6 +15,7 @@ router.post('/addInfo', async (ctx, next) => {
     code =0
   }catch(error){
     code = 1
+    console.log(error)
   }
   ctx.body = {
     code
